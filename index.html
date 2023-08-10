@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    
-    <title>Quiz Api</title>
+    <title>Jest Simon Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
-       <div>
-        <h2 id="questions">Question</h2>
-       </div>
-       
-        <div class ="row">
-            <colunm id="answer-0"class = "col-md-6">1</colunm>
-            <colunm id="answer-1" class = "col-md-6">2</colunm>
-            <colunm id="answer-2" class = "col-md-6" >3</colunm>
-            <colunm id="answer-3" class = "col-md-6" >4</colunm>
-        </div>
+        <h1>simon</h1>
+        <h2>memory game</h2>
     </div>
-<script src="assets/js/script.js"></script>    
-<script src="assets/js/api.js"></script>     
+    <div class="container">
+        <div data-listener="false" class="circle circle1" id="button1"></div>
+        <div data-listener="false" class="circle circle2" id="button2"></div>
+        <div data-listener="false" class="circle circle3" id="button3"></div>
+        <div data-listener="false" class="circle circle4" id="button4"></div>
+        <div class="scorebox" id="score">0</div>
+        <button class="button" onclick="newGame()">new game</button>
+    </div>
+    <script src="scripts/game.js"></script>
 </body>
+
 </html>
